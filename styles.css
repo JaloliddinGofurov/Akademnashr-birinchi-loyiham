@@ -7,11 +7,20 @@ body {
 
 /*SITE-HEADER*/
 .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
+}
+
+.site-header-actions {
+  display: flex;
+  align-items: center;
 }
 
 /* SITENAV */
 .sitenav-list {
+  display: flex;
   list-style: none;
 }
 
@@ -36,6 +45,9 @@ body {
 
 /*Main-section*/
 .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #252420;
   color: #FFFFFF;
 }
@@ -48,11 +60,13 @@ body {
   width: 510px;
   height: 510px;
 }
+
 .orange-line {
   width: 80px;
   height: 3px;
   background-color: #ff7500;
 }
+
 .hero-heading {
   font-size: 40px;
   line-height: 1.2;
@@ -67,29 +81,45 @@ body {
   line-height: 1.2;
   letter-spacing: 0.5;
 }
- .feature-icon-wrapper {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 117, 0, 0.2);
- }
- .feature-title {
-  font-size: 24px;
-  line-height: 1.2;
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
- }
 
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* Feature */
 .feature {
   width: 340px;
 }
 
+.feature-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 117, 0, 0.2);
+}
+
+.feature-title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+}
+
+
+
 /*Promo*/
 .promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #252420;
   color: #fff;
 }
+
 .promo-content {
   width: 440px;
 }
+
 .promo-heading {
   font-size: 40px;
   line-height: 48px;
@@ -99,6 +129,7 @@ body {
 .promo-hightlight {
   color: #ff7500;
 }
+
 .promo-img {
   width: 440px;
   height: 440px;
@@ -109,17 +140,35 @@ body {
 .site-footer {
   background-color: #f8f8f8;
 }
+
+.site-footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site-footer ul {
   list-style: none;
 }
+.site-footer-social {
+  display: flex;
+  align-items: center;
+}
+
+
 .site-footer-divider {
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
 }
+.site-footer-bottom {
+  display: flex;
+}
+
 .site-footer-links {
   width: 224px;
   line-height: 19px;
 }
+
 .site-footer-links a {
   text-decoration: none;
   color: #252420;
